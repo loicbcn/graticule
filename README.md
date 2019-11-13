@@ -24,7 +24,6 @@ La grille créée comporte 3 champs: ID | ROW | COL
     
     
 Ouvrir le dbmanager et exécuter cette requête depuis "virtual layer":
-
 ```sql
     with alphabet as(
         -- données de base pour les requêtes suivantes: l'alphabet et l'index max des lignes
@@ -32,7 +31,7 @@ Ouvrir le dbmanager et exécuter cette requête depuis "virtual layer":
     )
     select geometry, "ID", "COL", "ROW",  substr(a."lettres", "COL", 1) "colonne", cast(ABS(a."num_lignes"+1-"ROW") as integer) ligne
     from graticule g cross join alphabet a
-    ```
+```
 Les champs "ligne" et "colonne" sont créés et contiennent les valeurs voulues pour les lignes et colonnes.
 
 Puis cocher "charger en tant que nouvelle couche".
@@ -49,13 +48,12 @@ La couche "admin_express" de l'IGN contient une couche de points "CHEF_LIEU" qui
 
 Cette couche de points sera donc utiliser ici pour indexer les communes. 
 En exécutant cette requête ...
-
 ```sql
     select c.insee_com, c.statut, c.nom_chf, g.colonne colonne, g.ligne ligne
     from CHEF_LIEU_031 c
     inner join graticule g on st_intersects(g.geometry, c.geometry)
     order by nom_chf
-    ```
+```
 ... On obtient une table de données attributaires qui servira ensuite d'index dans la mise en page QGIS.
 Cocher "charger en tant que nouvelle couche".
 Choisir "INSEE_COM" comme champ unique décocher "Colonne de géométrie".
