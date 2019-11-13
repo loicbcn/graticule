@@ -90,7 +90,7 @@ Régler la taille de la police.
 
 Pour voir ce que ça donne:
 
-[Index des communes de Haute-Garonne](images/index_communes.png)
+[Index des communes de Haute-Garonne](https://github.com/loicbcn/graticule/blob/master/images/index_communes.png?raw=true)
 
 
 
