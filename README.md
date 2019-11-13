@@ -88,6 +88,10 @@ décaler de -7000 Unités de carte (cas de carrés de 10000m de côté) en x pou
 Affiner la position des étiquettes avec le contrôle Quadrant (Onglet position).
 Régler la taille de la police.
 
+Pour voir ce que ça donne:
+
+[Index des communes de Haute-Garonne](images/index_communes.png)
+
 
 
 
