@@ -26,7 +26,8 @@ Lorsque la grille est créée, la renommer "graticule", c'est le nom qui sera ut
 ## Adapter la grille 
 La grille créée comporte 3 champs: ID | ROW | COL
 
-    - Le champ ROW est indexé à l'envers (voir image) et, dans l'exemple, va de 14 à 1 ... 14 au nord et 1 au sud. Pour l'indexer de 1 à 14 du nord au sud, la formule ABS(14+1-ROW) doit être appliquée.
+    - Le champ ROW est indexé à l'envers (voir image) et, dans l'exemple, va de 14 à 1 ... 14 au nord et 1 au sud. 
+    Pour l'indexer de 1 à 14 du nord au sud, la formule ABS(14+1-ROW) doit être appliquée.
     
     - Le champ COL est indexé de 1 à 14 de l'ouest vers l'est. Il faut l'indexer avec des lettres: ici de A à N.
     
