@@ -1,4 +1,5 @@
-# Création d'un index graticulé pour une couche dans QGIS
+# Création d'un index graticulé pour une couche dans QGIS(1)
+
 Le graticule est une grille de polygones (souvent des carrés) recouvrant une carte.
 Cette grille va servir d'index pour les entités de la ou des couches qu'elle recouvre, ce qui permettra de localiser plus facilement ces entités.
 
@@ -93,8 +94,23 @@ Pour voir ce que ça donne:
 [Index des communes de Haute-Garonne](https://github.com/loicbcn/graticule/blob/master/images/index_communes.png?raw=true)
 
 
+### Affichage de l'index
+Dans la mise en page QGIS, ajouter une table des attributs. Puis dans les propriétés de l'objet, choisir la couche **"index_communes"**.
+
+Jouer avec les options de polices, d'attributs et de dessin de grille pour obtenir un aspect convenable.
+
+Dans filtrage des entités, pour que toutes les communes puissent s'afficher, écrire dans "Lignes maximales" une valeur supérieure ou égale au nombre d'enregistrements de la table.
+
+Dans cadres, choisir "Utiliser les cadres existants". Puis cliquer sur **Ajouter cadre**.
+
+QGIS permet d'ajouter des cadres depuis les propriétés d'un objet table d'attributs. Ces cadres sont en fait des copies de la table que l'on a insérée. et ces copies affichent les enregistrements que la première table ne peut pas afficher.
+Il faut donc ajouter des cadres jusqu'à ce que toutes les entités apparaissent.
 
 
+
+
+
+(1) Utilisation de QGIS 3.10 ... Devrait fonctionner aussi sous QGIS 2.18.
 
 
 
