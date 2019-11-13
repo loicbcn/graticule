@@ -89,9 +89,6 @@ décaler de -7000 Unités de carte (cas de carrés de 10000m de côté) en x pou
 Affiner la position des étiquettes avec le contrôle Quadrant (Onglet position).
 Régler la taille de la police.
 
-Pour voir ce que ça donne:
-
-[Index des communes de Haute-Garonne](https://github.com/loicbcn/graticule/blob/master/images/index_communes.png?raw=true)
 
 
 ### Affichage de l'index
@@ -107,7 +104,9 @@ QGIS permet d'ajouter des cadres depuis les propriétés d'un objet table d'attr
 Il faut donc ajouter des cadres jusqu'à ce que toutes les entités apparaissent.
 
 
+Pour voir ce que ça donne:
 
+[Index des communes de Haute-Garonne](https://github.com/loicbcn/graticule/blob/master/images/index_communes.png?raw=true)
 
 
 (1) Utilisation de QGIS 3.10 ... Devrait fonctionner aussi sous QGIS 2.18.
