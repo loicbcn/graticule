@@ -29,7 +29,9 @@ Ouvrir le dbmanager et exécuter cette requête depuis "virtual layer":
         -- données de base pour les requêtes suivantes: l'alphabet et l'index max des lignes
         select 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' "lettres",  MAX("COL") "num_lignes" FROM graticule
     )
-    select geometry, "ID", "COL", "ROW",  substr(a."lettres", "COL", 1) "colonne", cast(ABS(a."num_lignes"+1-"ROW") as integer) ligne
+    select geometry, "ID", "COL", "ROW",  
+           substr(a."lettres", "COL", 1) "colonne", 
+           cast(ABS(a."num_lignes"+1-"ROW") as integer) ligne
     from graticule g cross join alphabet a
 ```
 Les champs "ligne" et "colonne" sont créés et contiennent les valeurs voulues pour les lignes et colonnes.
