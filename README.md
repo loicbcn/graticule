@@ -25,7 +25,7 @@ La grille créée comporte 3 champs: ID | ROW | COL
     
 Ouvrir le dbmanager et exécuter cette requête depuis "virtual layer":
 
-    ``` sql 
+```sql
     with alphabet as(
         -- données de base pour les requêtes suivantes: l'alphabet et l'index max des lignes
         select 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' "lettres",  MAX("COL") "num_lignes" FROM graticule
@@ -50,7 +50,7 @@ La couche "admin_express" de l'IGN contient une couche de points "CHEF_LIEU" qui
 Cette couche de points sera donc utiliser ici pour indexer les communes. 
 En exécutant cette requête ...
 
-    ``` sql 
+```sql
     select c.insee_com, c.statut, c.nom_chf, g.colonne colonne, g.ligne ligne
     from CHEF_LIEU_031 c
     inner join graticule g on st_intersects(g.geometry, c.geometry)
