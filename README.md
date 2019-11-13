@@ -9,11 +9,17 @@ La carte présentera une liste de toutes les communes du département, ordonnée
 
 ## Créer la grille qui servira de graticule
 QGIS propose un outil qui permet de créer ce type de grille:
+
     - Dans QGIS, ouvrir la couche pour laquelle on crée le graticule.
+    
     - QGIS - Traitement - Boîte à outils
+    
         - Rechercher graticule
+        
         - Double-cliquer sur "Create polygons graticule"
+        
         - voir la copie d'écran
+        
         
 Lorsque la grille est créée, la renommer "graticule", c'est le nom qui sera utilisé dans les requêtes ci-dessous.
         
