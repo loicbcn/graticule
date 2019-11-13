@@ -109,7 +109,7 @@ Pour voir ce que ça donne:
 [Index des communes de Haute-Garonne](https://github.com/loicbcn/graticule/blob/master/images/index_communes.png?raw=true)
 
 
-(1) Utilisation de QGIS 3.10 ... Devrait fonctionner aussi sous QGIS 2.18.
+(1) Utilisation de QGIS 3.10 ... Devrait fonctionner aussi sous QGIS 2.18, car l'outil de création de graticule y est disponible.
 
 
 
