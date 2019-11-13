@@ -20,13 +20,16 @@ QGIS propose un outil qui permet de créer ce type de grille:
         
         - voir la copie d'écran
         
+![Options de l'outil "Create polygons graticule"](images/outil_graticule.PNG)
         
 Lorsque la grille est créée, la renommer "graticule", c'est le nom qui sera utilisé dans les requêtes ci-dessous.
         
 ## Adapter la grille 
 La grille créée comporte 3 champs: ID | ROW | COL.
+
     * Le champ ROW est indexé à l'envers (voir image) et, dans l'exemple, va de 14 à 1 ... 14 au nord et 1 au sud. 
     Pour l'indexer **de 1 à 14 du nord au sud**, la formule ABS(14+1-ROW) doit être appliquée.
+    
     * Le champ COL est indexé de 1 à 14 de l'ouest vers l'est. **Il faut l'indexer avec des lettres: ici de A à N**.
     
 ![Grille créée par l'outil "Create polygons graticule"](images/grille_creee.PNG)
@@ -78,7 +81,7 @@ Seront étiquetées:
 
 
 Dans les propriétés d'étiquetage de "graticule", choisir étiqueter selon des règles et créer 2 règles:
-
+![Règles des étiquettes"](images/regles_etiquettes.PNG)
 
 Puis dans le placement des étiquettes (Onglet position), choisir "décalé du centroïde" et 
 décaler de -7000 Unités de carte (cas de carrés de 10000m de côté) en x pour la première colonne et en y pour la première ligne.
